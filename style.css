@@ -213,6 +213,29 @@ main {
 hr{
     opacity:0.7;
 }
+/*Leaderboard Styling*/
+.rankedTab,.unrankedTab{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    align-items:center;
+    padding: 12px 12px;
+}
+.rankedTab{
+    background-color:var(--tabBg);
+    border:1px solid var(--tabBr);
+    border-radius: 10px;
+    
+}
+.details{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+.details p{
+    margin:0;
+    margin-top:5px;
+}
 /*tabs style*/
 .tabs-container {
     display: flex;
