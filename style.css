@@ -90,7 +90,7 @@ body {
     height: fit-content;
     align-items: center;
     background-color: var(--white);
-    border-radius: 25px;
+    border-radius: 13px;
     margin: 20px clamp(15px, 2vw, 25px) 0px;
     padding: 5px;
     padding-left: 15px;
