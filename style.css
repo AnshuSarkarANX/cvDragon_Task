@@ -38,7 +38,11 @@ body {
 }
 .iconHead p{
     font-size:20px;
-    font-weight:700;
+    font-weight:600;
+}
+.iconHead img{
+    height:40px;
+  margin-bottom:-7px;
 }
 .gap {
     gap: clamp(20px, 5vw, 120px);
