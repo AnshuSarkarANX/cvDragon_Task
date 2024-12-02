@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>cvDragon Task - Jain Shwetambar Terapanthi Mahasabha</title>
+</head>
+
+<body>
+    <div class="navContainer styleBg">
+        <nav class="flex-row gap">
+            <img class="menuIcon" src="./assets/menuIcon.png" alt="Menu Icon" />
+            <div class="flex-row">
+                <img class="navLogo" src="./assets/logo.png" alt="Logo" />
+                <p class="logoText">जैन श्वेताम्बर तेरापंथी महासभा</p>
+            </div>
+            <img class="menuIcon" src="./assets/user.png" alt="User Icon" />
+        </nav>
+        <div class="profileCard"><img class="avatarImage large" src="https://avatar.iran.liara.run/public" />
+            <div class="info">
+                <p class="name logoText">विक्की जैन</p>
+                <p class="location"><span><img src="./assets/locationIcon.png" /></span>मुंबई</p>
+                <p class="role">कार्यसमिति सदस्य</p>
+            </div>
+            <p class="points iconText">
+                <span><img class="points-img" src="./assets/pointsIcon.png" /></span>4000
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Searchbar-->
+        <div class="searchBar">
+            <input class="searchInput" placeholder="Search">
+        </div>
+        <!--Tasks section-->
+        <div class="tasks">
+            <h1><span><img src="./assets/lotusIcon.png" /></span> Tasks</h1>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab active">All</button>
+                    <button class="tab">To do</button>
+                    <button class="tab">In Progress</button>
+                    <button class="tab">Due</button>
+                    <button class="tab">Completed</button>
+                    <button class="tab">Summary</button>
+                </div>
+            </div>
+            <div class="taskTab flex-row">
+                <div class=" leftBar">
+                    <p class="logoText name">महावीर जयंती आयोजन</p>
+                    <p class="taskStatus"><span class="ToDo">To Do</span> 25 Days left</p>
+                </div>
+                <div class="rightBar">
+                    <p>Important</p>
+
+                    <div class="iconContainer"><img src="./assets/pinSmall.png" />
+                        <img src="./assets/bellSmall.png" />
+                        <img src="./assets/noteSmall.png" />
+                        <img src="./assets/chatSmall.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="taskTab flex-row">
+                <div class=" leftBar">
+                    <p class="logoText name">महावीर जयंती आयोजन</p>
+                    <p class="taskStatus"><span class="ToDo">To Do</span> 25 Days left</p>
+                </div>
+                <div class="rightBar">
+                    <p>Important</p>
+
+                    <div class="iconContainer"><img class="hide" src="./assets/pinSmall.png" />
+                        <img src="./assets/bellSmall.png" />
+                        <img src="./assets/noteSmall.png" />
+                        <img src="./assets/chatSmall.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="taskTab flex-row">
+                <div class=" leftBar">
+                    <p class="logoText name">महावीर जयंती आयोजन</p>
+                    <p class="taskStatus"><span class="ToDo">To Do</span> 25 Days left</p>
+                </div>
+                <div class="rightBar">
+                    <p>Important</p>
+
+                    <div class="iconContainer"><img class="hide" src="./assets/pinSmall.png" />
+                        <img src="./assets/bellSmall.png" />
+                        <img src="./assets/noteSmall.png" />
+                        <img src="./assets/chatSmall.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="taskTab flex-row">
+                <div class=" leftBar">
+                    <p class="logoText name">महावीर जयंती आयोजन</p>
+                    <p class="taskStatus"><span class="ToDo">To Do</span> 25 Days left</p>
+                </div>
+                <div class="rightBar">
+                    <p>Important</p>
+
+                    <div class="iconContainer"><img class="hide" src="./assets/pinSmall.png" />
+                        <img src="./assets/bellSmall.png" />
+                        <img src="./assets/noteSmall.png" />
+                        <img src="./assets/chatSmall.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="taskTab flex-row">
+                <div class=" leftBar">
+                    <p class="logoText name">महावीर जयंती आयोजन</p>
+                    <p class="taskStatus"><span class="ToDo">To Do</span> 25 Days left</p>
+                </div>
+                <div class="rightBar">
+                    <p>Important</p>
+
+                    <div class="iconContainer"><img class="hide" src="./assets/pinSmall.png" />
+                        <img src="./assets/bellSmall.png" />
+                        <img src="./assets/noteSmall.png" />
+                        <img src="./assets/chatSmall.png" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Updates section-->
+        <div class="updates">
+            <h1><span><img src="./assets/lotusIcon.png" /></span> Updates</h1>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="slide-content">
+                            <h2>कार्यसमिति बैठक</h2>
+                            <p>17 अप्रैल 2024 रात्रि 8 बजे से जूम लिंक कार्यसमिति ग्रुप में पोस्ट कर दिया गया है।</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="slide-content">
+                            <h2>कार्यसमिति बैठक</h2>
+                            <p>17 अप्रैल 2024 रात्रि 8 बजे से जूम लिंक कार्यसमिति ग्रुप में पोस्ट कर दिया गया है।</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="slide-content">
+                            <h2>कार्यसमिति बैठक</h2>
+                            <p>17 अप्रैल 2024 रात्रि 8 बजे से जूम लिंक कार्यसमिति ग्रुप में पोस्ट कर दिया गया है।</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="slide-content">
+                            <h2>कार्यसमिति बैठक</h2>
+                            <p>17 अप्रैल 2024 रात्रि 8 बजे से जूम लिंक कार्यसमिति ग्रुप में पोस्ट कर दिया गया है।</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide">
+                        <div class="slide-content">
+                            <h2>कार्यसमिति बैठक</h2>
+                            <p>17 अप्रैल 2024 रात्रि 8 बजे से जूम लिंक कार्यसमिति ग्रुप में पोस्ट कर दिया गया है।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Quick link -->
+        <div class="quickLinks">
+            <h1><span><img src="./assets/lotusIcon.png" /></span> Quick Links</h1>
+            <div class="links flex-row">
+                <div>
+                    <div class="linkBG"><img class="linkImage" src="./assets/bar-chart.png" /></div>
+                    <p>Poll</p>
+                </div>
+                <div>
+                    <div class="linkBG"><img class="linkImage" src="./assets/book.png" /></div>
+                    <p>Knowledge</p>
+                </div>
+                <div>
+                    <div class="linkBG"><img class="linkImage" src="./assets/downloadIcon.png" /></div>
+                    <p>Downloads</p>
+                </div>
+                <div>
+                    <div class="linkBG"><img class="linkImage" src="./assets/get-money.png" />
+                    </div>
+                    <p>Contribute</p>
+                </div>
+                <div>
+                    <div class="linkBG"><img class="linkImage" src="./assets/moreIcon.png" />
+                    </div>
+                    <p>More</p>
+                </div>
+            </div>
+        </div>
+        <!--Community section-->
+        <div class="community">
+            <h1><span><img src="./assets/lotusIcon.png" /></span> Mahasabha Community</h1>
+            <div class="communityTabsContainer">
+                <div class="communityTab">
+                    <div class="topBar flex-row"><img class=" avatarImage" src="https://avatar.iran.liara.run/public" />
+                        <p> <span class="boldText">समीर वकील</span> ने <span class=" boldText">सूरत</span> तेरापंथी सभा
+                            के
+                            अंतर्गत<span class=" boldText">महावीर जयंती आयोजन</span> का प्रथम चरण सम्पन्न किया।</p>
+                    </div>
+                    <div class="bottomBar flex-row">
+                        <p>5 minutes ago</p>
+                        <p class=" iconText"><span><img src="./assets/likeIcon.png" /></span>5</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="communityTab">
+                    <div class="topBar flex-row"><img class=" avatarImage" src="https://avatar.iran.liara.run/public" />
+                        <p> <span class="boldText">समीर वकील</span> ने <span class=" boldText">सूरत</span> तेरापंथी सभा
+                            के
+                            अंतर्गत<span class=" boldText">महावीर जयंती आयोजन</span> का प्रथम चरण सम्पन्न किया।</p>
+                    </div>
+                    <div class="bottomBar flex-row">
+                        <p>5 minutes ago</p>
+                        <p class=" iconText"><span><img src="./assets/likeIcon.png" /></span>5</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="communityTab">
+                    <div class="topBar flex-row"><img class=" avatarImage" src="https://avatar.iran.liara.run/public" />
+                        <p> <span class="boldText">समीर वकील</span> ने <span class=" boldText">सूरत</span> तेरापंथी सभा
+                            के
+                            अंतर्गत<span class=" boldText">महावीर जयंती आयोजन</span> का प्रथम चरण सम्पन्न किया।</p>
+                    </div>
+                    <div class="bottomBar flex-row">
+                        <p>5 minutes ago</p>
+                        <p class=" iconText"><span><img src="./assets/likeIcon.png" /></span>5</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="communityTab">
+                    <div class="topBar flex-row"><img class=" avatarImage" src="https://avatar.iran.liara.run/public" />
+                        <p> <span class="boldText">समीर वकील</span> ने <span class=" boldText">सूरत</span> तेरापंथी सभा
+                            के
+                            अंतर्गत<span class=" boldText">महावीर जयंती आयोजन</span> का प्रथम चरण सम्पन्न किया।</p>
+                    </div>
+                    <div class="bottomBar flex-row">
+                        <p>5 minutes ago</p>
+                        <p class=" iconText"><span><img src="./assets/likeIcon.png" /></span>5</p>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+            <p class=" boldText moreText">Show more</p>
+        </div>
+        <!--Leaderboard section-->
+        <div class="leaderboard">
+            <h1><span><img src="./assets/lotusIcon.png" /></span> Leaderboard</h1>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab active">Prabhari</button>
+                    <button class="tab">My Score</button>
+                    <button class="tab">Task wise</button>
+                    <button class="tab">Anchal</button>
+                    <button class="tab">Zone</button>
+                    <button class="tab">My Zone</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--Event section-->
+        <div class="events">
+            <h1><span><img src="./assets/lotusIcon.png" /></span> Events</h1>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab active">All</button>
+                    <button class="tab">Terapanth</button>
+                    <button class="tab">Mahasabha</button>
+                </div>
+            </div>
+
+            <div class="eventSlide"><img class="event-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwFHo7gcTTS-5wDiV_1s2PVKluxSKva7bSylis5Mgum9ApE_XRTGxI_MSkGwpi1_dD3U&usqp=CAU" />
+                <p class="boldText">तेरापंथ स्थापना दिवस</p>
+
+                <p class="iconText"><span><img class="points-img" src="./assets/calendarIcon.png" /></span> 17 July 2024
+                </p>
+            </div>
+            <div class="textContainer">
+                <div class="pagination">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <p class="moreText boldText">Show More</p>
+            </div>
+
+        </div>
+        <!--News Section-->
+        <div class="news">
+            <h1><span><img src="./assets/lotusIcon.png" /></span> News</h1>
+            <div class="newscontainer">
+                <div class="newsTab flex-row"><img class="newsImage"
+                        src="https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-260nw-1037719192.jpg">
+                    <p>महातपस्वी की मंगल सन्निधि में आयोजित हुआ
+                        ज्ञानशाला दीक्षान्त समारोह</p>
+                </div>
+                <div class="newsTab flex-row"><img class="newsImage"
+                        src="https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-260nw-1037719192.jpg">
+                    <p>महातपस्वी की मंगल सन्निधि में आयोजित हुआ
+                        ज्ञानशाला दीक्षान्त समारोह</p>
+                </div>
+            </div>
+            <p class=" boldText moreText">Show more</p>
+        </div>
+
+    </main>
+
+    <!-- Footer Section-->
+    <footer class="flex-row">
+        <div>
+            <img src="./assets/homeIcon.png" alt="Home Icon" />
+            <p>Home</p>
+        </div>
+        <div>
+            <img src="./assets/chartIcon.png" alt="Chart Icon" />
+            <p>Leaderboard</p>
+        </div>
+        <div>
+            <img class="navLogo" src="./assets/logo.png" alt="My Area Icon" />
+            <p>My Area</p>
+        </div>
+        <div>
+            <img src="./assets/chatIcon.png" alt="Chat Icon" />
+            <p>Chats</p>
+        </div>
+        <div>
+            <img src="./assets/contactIcon.png" alt="Contact Icon" />
+            <p>Contacts</p>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        //Initialize Swiper
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        //tab switching
+        const tabs = document.querySelectorAll('.tab');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => setTimeout(() => {
+                // Remove 'active' class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+                // Add 'active' class to the clicked tab
+                tab.classList.add('active');
+            }, 100));
+        });
+
+    </script>
+</body>
+
+
+</html>

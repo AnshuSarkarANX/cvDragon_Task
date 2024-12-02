@@ -1,0 +1,348 @@
+:root {
+    --white: #ffffff;
+    --red: #9a0000;
+    --LinkBg: #fae2ba;
+    --tabBg: #fff9e9;
+    --tabBr: #ffbf59;
+    --iconColor: #eec47f;
+    --swiper-pagination-color: var(--red)
+}
+body {
+
+    margin: 0 auto;
+    padding: 0;
+    height: 100%; /* Ensure body takes full viewport height */
+    max-width: 700px;
+    background-color: var(--white);
+    display: flex;
+    /* overflow-x: hidden; */
+    flex-direction: column; /* Set a column layout */
+}
+
+/*reuseable classes*/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.iconText{
+    display:flex;
+    align-items:center;
+}
+.gap {
+    gap: clamp(20px, 5vw, 120px);
+}
+.logoText {
+    margin-left: clamp(20px, 3vw, 35px);
+    color: var(--red);
+    font-size: clamp(18px, 2vw, 22px);
+    font-weight: 800;
+}
+.boldText{
+    color:var(--red);
+    font-size: 17px;
+    font-weight: 800; 
+}
+.moreText{
+   margin-left:75%;
+}
+.hide{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+/* Navbar styling */
+.navContainer {
+    position: relative;
+}
+.styleBg {
+    background: var(--LinkBg);
+    border-radius: 0 0 40px 40px;
+    background-size: 20px 10px;
+}
+.navLogo {
+    width: clamp(55px, 5vw, 700px);
+}
+.menuIcon {
+    height: 25px;
+}
+/* Profile section */
+.profileCard {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 25px;
+    margin: 20px clamp(15px, 2vw, 25px) 0px;
+    padding: 5px;
+    padding-left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
+}
+.avatarImage {
+    width: 12%;
+}
+.large {
+    width: 22%;
+}
+.info p {
+    margin: 10px;
+}
+.name {
+    font-size: clamp(18px, 2vw, 20px);
+}
+.location {
+    display: flex;
+    gap: 3px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+.role {
+    opacity: 0.8;
+}
+.points {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    border-radius: 7px;
+    background-color: var(--tabBr);
+    padding: 2px 4px;
+    border: 2px solid #fff2df;
+}
+.points-img {
+    height: 20px;
+    width: 20px;
+}
+
+/* Main section styling */
+main {
+    flex:1;
+    padding: 0 clamp(15px, 2vw, 25px);
+}
+
+/* Search Bar */
+.searchInput {
+    margin: 2vh auto;
+    height: 35px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+/* Tasks styling */
+.taskTab{
+    background-color:var(--tabBg);
+    border:1px solid var(--tabBr);
+    border-radius: 10px;
+    padding: 12px 12px;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+
+.taskTab p{
+    margin: 0;
+}
+.leftBar,.rightBar{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.leftBar{
+    gap:13px;
+}
+.rightBar p{
+  font-weight: 700;
+  margin-left:35%;
+}
+.ToDo{
+    background-color: rgb(41, 107, 151);
+    color: var(--white);
+    padding: 2px 30px;
+    border-radius: 3px;
+}
+.iconContainer{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    width:20%;
+}
+/* Swiper styling */
+.updates{
+    position:relative;
+}
+.swiper-pagination{
+    margin-top:20px !important;
+    position: relative !important;
+}
+.slide {
+    color: var(--white);
+    background-color: var(--red);
+    border-radius:15px; 
+}
+.slide-content{
+ padding:5px 20px;
+}
+.slide-content p{
+   font-size:20px
+}
+
+/* Quick Links */
+.links {
+    text-align: center;
+}
+.linkBG {
+    background-color: var(--LinkBg);
+    padding: 20px;
+    border-radius: 40px;
+}
+/* Community styling*/
+.communityTab{
+    padding: 10px;
+}
+.topBar{
+    gap:10px
+}
+.bottomBar{
+    justify-content: space-between;
+     padding:0px 12px;
+}
+.bottomBar p{
+    margin: 0;
+}
+hr{
+    opacity:0.7;
+}
+/*tabs style*/
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    overflow-x:scroll;
+    margin-bottom:20px;
+}
+.tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #e0e0e0; /* Light gray line */
+    width: 100%;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    color: #333;
+    transition:0.5s;
+}
+
+.tab.active {
+    font-weight: bold;
+    color: #000;
+    transition:0.5s;/* Dark text for active tab */
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000; /* Underline for active tab */
+    transition:0.5s;
+}
+
+.tab:hover {
+    color: #555; /* Slightly darker color on hover */
+}
+/* Events styling */
+.events{
+    position:relative;
+}
+.eventSlide{
+    border-radius:20px;
+    padding:20px 20px 10px;
+    box-shadow:1px 1px 20px rgba(0,0,0,0.1);
+}
+ .event-img{
+height:clamp(100px,20vh,300px);
+   width:100%;
+   border-radius:10px;
+   margin-bottom:-10px;
+ }
+ .eventSlide .iconText {
+    margin-bottom: -5px;
+ }
+ .textContainer{
+    display:flex;
+    width:100%;
+ }
+ .textContainer .moreText{
+    margin-left: 30%;
+ }
+ .pagination {
+  display: flex;
+  margin-left:40%;
+  justify-content: center;
+  align-items: center;
+  gap: 4px; /* Space between dots */
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d3d3d3; /* Gray color */
+}
+
+.dot.active {
+  background-color: #9a0000; /* Red color */
+}
+/*News Styling*/
+.newsTab{
+        background-color:var(--tabBg);
+    border:1px solid var(--tabBr);
+    border-radius: 10px;
+    padding: 12px 12px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+.newsImage{
+    height: 80px;
+    width: 120px;
+} 
+.newsTab p{
+    font-weight: 600;
+    color: var(--red);
+}
+
+/* Footer styling*/
+footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red);
+    width: 100%;
+    z-index:100;
+}
+
+/* Media queries */
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+     .textContainer .moreText{
+    margin-left: 20%;
+ }
+}
