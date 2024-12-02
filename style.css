@@ -30,6 +30,16 @@ body {
     display:flex;
     align-items:center;
 }
+.iconHead{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+}
+.iconHead p{
+    font-size:20px;
+    font-weight:700;
+}
 .gap {
     gap: clamp(20px, 5vw, 120px);
 }
