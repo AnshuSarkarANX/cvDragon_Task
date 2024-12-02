@@ -387,4 +387,8 @@ footer {
      .textContainer .moreText{
     margin-left: 20%;
  }
+ .rightBar p{
+  font-weight: 700;
+  margin-left:30%;
+}
 }
