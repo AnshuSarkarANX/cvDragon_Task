@@ -34,7 +34,7 @@ body {
 .iconHead{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:12px;
     margin-top:15px;
 }
 .iconHead p{
@@ -42,7 +42,7 @@ body {
     font-weight:600;
 }
 .iconHead img{
-    height:40px;
+
   margin-bottom:-7px;
 }
 .gap {
@@ -97,7 +97,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px;
 }
 .avatarImage {
-    width: 12%;
+    width: 14%;
 }
 .large {
     width: 22%;
@@ -193,13 +193,18 @@ main {
 .slide {
     color: var(--white);
     background-color: var(--red);
-    border-radius:15px; 
+    border-radius:10px; 
 }
 .slide-content{
- padding:5px 20px;
+ padding:8px 20px;
+}
+.slide-content h2{
+   margin: 0;
 }
 .slide-content p{
-   font-size:20px
+    font-size: 20px;
+   margin: 0;
+   margin-top: 10px;
 }
 
 /* Quick Links */
@@ -221,6 +226,9 @@ main {
     align-items: center;
 }
 /* Community styling*/
+.communityTabsContainer{
+    margin-top: -15px;
+}
 .communityTab{
     padding: 10px;
 }
@@ -268,7 +276,7 @@ hr{
     padding: 10px;
     font-family: Arial, sans-serif;
     overflow-x:scroll;
-    margin-bottom:20px;
+    margin:-15px 0px 20px;
 }
 .tabs-container::-webkit-scrollbar {
   display: none;
@@ -290,7 +298,7 @@ hr{
     position: relative;
     color: #333;
     transition:0.5s;
-    white-space: nowrap;:
+    white-space: nowrap;
 }
 
 .tab.active {
