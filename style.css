@@ -73,7 +73,7 @@ body {
     position: relative;
 }
 .styleBg {
-    height: 17vh;
+    height: 15.5vh;
     background-color: var(--LinkBg);
     border-radius: 0 0 30px 30px;
     top: 0;
