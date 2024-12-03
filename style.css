@@ -168,7 +168,7 @@ main {
 }
 .rightBar p{
   font-weight: 700;
-  margin-left:35%;
+  align-self: flex-end;
 }
 .ToDo{
     background-color: rgb(41, 107, 151);
