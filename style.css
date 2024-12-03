@@ -35,7 +35,7 @@ body {
     display:flex;
     align-items:center;
     gap:15px;
-    margin-top:20px;
+    margin-top:15px;
 }
 .iconHead p{
     font-size:20px;
@@ -203,13 +203,22 @@ main {
 }
 
 /* Quick Links */
-.links {
-    text-align: center;
+.linksContainer {
+ justify-items:center;
 }
 .linkBG {
+    height: 65px;
+    width:65px;
     background-color: var(--LinkBg);
-    padding: 20px;
     border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* Community styling*/
 .communityTab{
