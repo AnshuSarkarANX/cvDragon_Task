@@ -396,6 +396,7 @@ footer {
     background-color: var(--red);
     width: 100%;
     z-index:10;
+    justify-items: center;
     justify-content: space-between;
 }
 .footerLinks{
@@ -436,5 +437,16 @@ footer {
  .rightBar p{
   font-weight: 700;
   margin-left:30%;
+}
+.footerLinks img{
+    height: 27px;
+    width: 27px;
+}
+.footerLinks p{
+   margin: 5px 0px ;
+   font-size: clamp(12px,2vw,14px);
+}
+.mainLink{
+    margin-left: -8px;
 }
 }
